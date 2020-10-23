@@ -6,7 +6,8 @@ class RoundedButtonPink extends StatelessWidget {
   final String text;
   final Function press;
   final Color color, textColor;
-  final num buttonwidth, buttonheight;
+  //Часть экрана, которуя занимает кнопка
+  final double buttonwidth, buttonheight;
   const RoundedButtonPink({
     Key key,
     this.text,
@@ -19,13 +20,12 @@ class RoundedButtonPink extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 8),
-      width: size.width * buttonwidth,
-      height: size.height * buttonheight,
+      width: buttonwidth,
+      height: buttonheight,
+      //Чтобы сделать закругления радиус из фигмы
       child: ClipRRect(
-        borderRadius: BorderRadius.circular(100),
+        borderRadius: BorderRadius.circular(16),
         child: FlatButton(
           padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
           color: color,
@@ -45,7 +45,7 @@ class RoundedButtonBlack extends StatelessWidget {
   final String text;
   final Function press;
   final Color color, textColor;
-  final num buttonwidth, buttonheight;
+  final double buttonwidth, buttonheight;
   const RoundedButtonBlack({
     Key key,
     this.text,
@@ -58,17 +58,16 @@ class RoundedButtonBlack extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 8),
-      width: size.width * buttonwidth,
-      height: size.height * buttonheight,
+      width: buttonwidth,
+      height: buttonheight,
       child: ClipRRect(
-        borderRadius: BorderRadius.circular(100),
+        //borderRadius: BorderRadius.circular(16),
         child: FlatButton(
           shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(100),
-              side: BorderSide(color: kPrimaryPinkColor1, width: 1)),
+            side: BorderSide(color: kPrimaryPinkColor1, width: 1),
+            borderRadius: BorderRadius.circular(16),
+          ),
           padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
           color: color,
           textColor: Colors.white,

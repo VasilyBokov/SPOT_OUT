@@ -71,6 +71,13 @@ final kHeadlingTextStyleWhite5 = TextStyle(
     fontWeight: FontWeight.w600,
     color: Colors.white);
 
+final kHeadlingTextStyleGrey5 = TextStyle(
+    decoration: TextDecoration.none,
+    fontSize: 14,
+    fontFamily: 'Montserrat',
+    fontWeight: FontWeight.w600,
+    color: Color(0xFF9196A0));
+
 final kHeadlingTextStyleGrey1 = TextStyle(
     decoration: TextDecoration.none,
     fontSize: 16,
@@ -86,26 +93,41 @@ final kHeadlingTextStyleGrey2 = TextStyle(
     color: Color(0xFF9196A0));
 
 // PARAGRAPHS
-final kParagraphTextStyle1 = TextStyle(
+final kParagraphTextStyleWhite1 = TextStyle(
     decoration: TextDecoration.none,
     fontSize: 14,
     fontFamily: 'Inter',
     fontWeight: FontWeight.w600,
     color: Colors.white);
 
-final kParagraphTextStyle2 = TextStyle(
+final kParagraphTextStyleWhite2 = TextStyle(
     decoration: TextDecoration.none,
     fontSize: 13,
     fontFamily: 'Inter',
     fontWeight: FontWeight.w400,
     color: Colors.white);
 
-final kParagraphTextStyle3 = TextStyle(
+final kParagraphTextStyleGrey2 = TextStyle(
+    decoration: TextDecoration.none,
+    fontSize: 13,
+    fontFamily: 'Inter',
+    fontWeight: FontWeight.w400,
+    //letterSpacing: 0.05,
+    color: Color(0xFF9196A0));
+
+final kParagraphTextStyleWhite3 = TextStyle(
     decoration: TextDecoration.none,
     fontSize: 12,
     fontFamily: 'Inter',
     fontWeight: FontWeight.w400,
     color: Colors.white);
+
+final kParagraphTextStyleBlue3 = TextStyle(
+    decoration: TextDecoration.none,
+    fontSize: 12,
+    fontFamily: 'Inter',
+    fontWeight: FontWeight.w400,
+    color: Color(0xFF556BF5));
 
 final kParagraphTextStyleGrey3 = TextStyle(
     decoration: TextDecoration.none,
@@ -121,12 +143,11 @@ final kParagraphTextStyle4 = TextStyle(
     fontWeight: FontWeight.w400,
     color: Colors.white);
 
-// SECONDARY TEXTS
+//AUXILIARY TEXTS
 
-final kCaptionTextStyle = TextStyle(
-  fontWeight: FontWeight.w400,
-);
-
-final kLinkTextStyle = TextStyle(
-  fontWeight: FontWeight.w400,
-);
+final kInputTextStyleGrey = TextStyle(
+    decoration: TextDecoration.none,
+    fontSize: 12,
+    fontFamily: 'Montserrat',
+    fontWeight: FontWeight.w500,
+    color: Color(0XFFC2C6CC));

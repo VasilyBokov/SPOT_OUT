@@ -13,7 +13,7 @@ class ClickableText extends StatelessWidget {
     this.textColor,
     this.textStyle,
   }) : super(key: key);
-
+//Все стили прописаны в разделе constants
   @override
   Widget build(BuildContext context) {
     return Row(
